@@ -2,6 +2,11 @@
 Changelog
 =========
 
+Version 0.4.0
+=============
+
+- Update package setup files using pyscaffold v3.3
+
 Version 0.3
 ===========
 

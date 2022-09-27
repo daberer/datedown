@@ -1,6 +1,6 @@
 # The MIT License (MIT)
 #
-# Copyright (c) 2016,Christoph Paulik
+# Copyright (c) 2022, Christoph Paulik
 #
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
@@ -30,12 +30,6 @@ import os
 from functools import partial
 
 import datedown.wget as wget
-try:
-    # Python 2
-    from itertools import izip as zip
-except ImportError:
-    # Python 3
-    pass
 
 
 def download(urls, targets, num_proc=1, username=None, password=None,
