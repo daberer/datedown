@@ -27,7 +27,7 @@ jobs:
           auto-update-conda: true
           python-version: ${{ matrix.python-version }}
           environment-file: ${{ matrix.ymlfile }}
-          activate-environment: equi7grid_env
+          activate-environment: datedown_env
           auto-activate-base: false
       - name: Print infos
         shell: bash -l {0}
