@@ -1,0 +1,5 @@
+name: datedown_env
+channels:
+  - defaults
+dependencies:
+  - pip
