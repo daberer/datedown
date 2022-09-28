@@ -2,9 +2,6 @@
 datedown
 ========
 
-.. image:: https://travis-ci.org/cpaulik/datedown.svg?branch=master
-    :target: https://travis-ci.org/cpaulik/datedown
-
 .. image:: https://coveralls.io/repos/github/cpaulik/datedown/badge.svg?branch=master
    :target: https://coveralls.io/github/cpaulik/datedown?branch=master
 
@@ -82,5 +79,5 @@ API Documentation for more details about these functions.
 Note
 ====
 
-This project has been set up using PyScaffold 2.5.6. For details and usage
+This project has been set up using PyScaffold 3.3 For details and usage
 information on PyScaffold see http://pyscaffold.readthedocs.org/.
