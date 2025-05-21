@@ -22,7 +22,7 @@ if __name__ == "__main__":
         author="Christoph Paulik",
         author_email="cpaulikk@vandersat.com",
         license="mit",
-        url="https://github.com/daberer/datedown"
+        url="https://github.com/daberer/datedown",
         project_urls={
             "Documentation": "https://github.com/cpaulik/datedown",
         },
