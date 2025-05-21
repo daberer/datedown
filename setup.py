@@ -1,22 +1,39 @@
 # -*- coding: utf-8 -*-
 """
     Setup file for datedown.
-    Use setup.cfg to configure your project.
-
-    This file was generated with PyScaffold 3.3.
-    PyScaffold helps you to put up the scaffold of your new Python project.
-    Learn more under: https://pyscaffold.org/
 """
 import sys
-from pkg_resources import VersionConflict, require
-from setuptools import setup
+from setuptools import setup, find_packages
 
+# Read the long description from README.rst
 try:
-    require("setuptools>=38.3")
-except VersionConflict:
-    print("Error: version of setuptools is too old (<38.3)!")
-    sys.exit(1)
-
+    with open("README.rst", "r") as f:
+        long_description = f.read()
+except:
+    long_description = "Small library to download files with date and time based filenames or folder structures."
 
 if __name__ == "__main__":
-    setup(use_pyscaffold=True)
+    setup(
+        name="datedown",
+        version="0.4",  # Static version number
+        description="Small library to download files with date and time based filenames or folder structures. In parallel using wget.",
+        long_description=long_description,
+        long_description_content_type="text/x-rst; charset=UTF-8",
+        author="Christoph Paulik",
+        author_email="cpaulikk@vandersat.com",
+        license="mit",
+        url="https://github.com/daberer/datedown"
+        project_urls={
+            "Documentation": "https://github.com/cpaulik/datedown",
+        },
+        platforms=["any"],
+        packages=find_packages(),
+        install_requires=[
+            "pygeobase",
+            "progressbar2",
+        ],
+        classifiers=[
+            "Development Status :: 4 - Beta",
+            "Programming Language :: Python",
+        ],
+    )
